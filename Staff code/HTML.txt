@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+        <center>
+                <p class="vote-staff">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat nulla non
+                        elementum fermentum. Curabitur pellentesque turpis accumsan felis vulputate, a accumsan nulla
+                        molestie. Nunc quam neque, venenatis in nulla non, placerat congue libero. Ut vitae nunc id
+                        massa ultricies blandit semper at neque. Ut quis augue id enim pellentesque ullamcorper eget nec
+                        urna. Aliquam sodales, risus vel mattis tristique, magna eros auctor nulla, in aliquam elit urna
+                        vitae leo. Proin et volutpat tellus, ornare facilisis odio.</p>
+        </center>
+        <ul class="navi-staff">
+                <li><img src="https://i.imgur.com/U3L7XJY.png">
+                        <center>
+                                <h2 style="background-color:red">Owner</h2>
+                                <h1>Inwin1</h1>
+                        </center>
+                </li>
+                <br>
+                <li><img src="https://i.imgur.com/U3L7XJY.png">
+                        <center>
+                                <h2 style="background-color:orange">Admin</h2>
+                                <h1>In game name</h1>
+                        </center>
+                </li>
+                <li><img src="https://i.imgur.com/U3L7XJY.png">
+                        <center>
+                                <h2 style="background-color:orange">Admin</h2>
+                                <h1>In game name</h1>
+                        </center>
+                </li>
+                <br>
+                <li><img src="https://i.imgur.com/U3L7XJY.png">
+                        <center>
+                                <h2 style="background-color:#108f53">Mod+</h2>
+                                <h1>In game name</h1>
+                        </center>
+                </li>
+                <li><img src="https://i.imgur.com/U3L7XJY.png">
+                        <center>
+                                <h2 style="background-color:#108f53">Mod+</h2>
+                                <h1>In game name</h1>
+                        </center>
+                </li>
+                <li><img src="https://i.imgur.com/U3L7XJY.png">
+                        <center>
+                                <h2 style="background-color:#108f53">Mod+</h2>
+                                <h1>In game name</h1>
+                        </center>
+                </li>
+                <br>
+                <li><img src="https://i.imgur.com/U3L7XJY.png">
+                        <center>
+                                <h2 style="background-color:#87e088">Mod</h2>
+                                <h1>In game name</h1>
+                        </center>
+                </li>
+                <li><img src="https://i.imgur.com/U3L7XJY.png">
+                        <center>
+                                <h2 style="background-color:#87e088">Mod</h2>
+                                <h1>In game name</h1>
+                        </center>
+                </li>
+                <li><img src="https://i.imgur.com/U3L7XJY.png">
+                        <center>
+                                <h2 style="background-color:#87e088">Mod</h2>
+                                <h1>In game name</h1>
+                        </center>
+                </li>
+                <li><img src="https://i.imgur.com/U3L7XJY.png">
+                        <center>
+                                <h2 style="background-color:#87e088">Mod</h2>
+                                <h1>In game name</h1>
+                        </center>
+                </li>
+                <li><img src="https://i.imgur.com/U3L7XJY.png">
+                        <center>
+                                <h2 style="background-color:#87e088">Mod</h2>
+                                <h1>In game name</h1>
+                        </center>
+                </li>
+                <br>
+                <li><img src="https://i.imgur.com/U3L7XJY.png">
+                        <center>
+                                <h2 style="background-color:#44dbf2">Helper</h2>
+                                <h1>In game name</h1>
+                        </center>
+                </li>
+                <li><img src="https://i.imgur.com/U3L7XJY.png">
+                        <center>
+                                <h2 style="background-color:#44dbf2">Helper</h2>
+                                <h1>In game name</h1>
+                        </center>
+                </li>
+                <li><img src="https://i.imgur.com/U3L7XJY.png">
+                        <center>
+                                <h2 style="background-color:#44dbf2">Helper</h2>
+                                <h1>In game name</h1>
+                        </center>
+                </li>
+        </ul>
+</body>
+
+</html>
+
+<style>
+        .vote-staff {
+                width: 80%;
+                text-align: center;
+                margin: 20px;
+        }
+
+        .navi-staff {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+        }
+
+        .navi-staff li {
+                width: 200px;
+                height: 200px;
+                display: inline-block;
+                list-style-type: none;
+                transition-duration: 0.5s;
+                cursor: pointer;
+        }
+
+        .navi-staff li:hover {
+                transform: scale(1.23);
+                transition-duration: 0.5s;
+        }
+
+        .navi-staff img {
+                width: 100px;
+                height: 100px;
+        }
+
+        .navi-staff h2 {
+                width: 90px;
+                border-radius: 5px;
+                height: 20px;
+                padding-top: 5px;
+                background-color: white;
+                color: white;
+                text-transform: uppercase;
+        }
+
+        .navi-staff h1 {
+                font-size: 15px;
+                margin: 5px;
+        }
+</style>
