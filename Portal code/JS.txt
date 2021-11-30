@@ -1,0 +1,30 @@
+// Script regarding players, using MCAPI - https://mcapi.us/
+window.addEventListener('load', function theseFunc2() {
+        var un1 = $('#enjin-bar span.element_username').text();
+        if (un1 == '') {
+                document.getElementById("lgi").innerHTML = "Not logged in...";
+                runItNow();
+        } else {
+                document.getElementById("lgi").innerHTML = "Logged in as ";
+                document.querySelector(".username_1").innerHTML = un1;
+                runItNow();
+        }
+
+        function runItNow() {
+                MinecraftAPI.getServerStatus('s.nerd.nu', {
+                        port: 25565
+                }, function (err, status) {
+                        if (err) {
+                                console.log('Error')
+                        }
+                        document.querySelector('.players1').innerHTML = status.players.now;
+                        document.querySelector('.players1').style.animation = 'none';
+                        document.querySelector('.players1').style.borderBottom = 'solid 2px rgb(6, 75, 167)';
+                });
+                document.querySelector('.ip1').addEventListener('click', function copyIP1() {
+                        console.log('Copying the IP');
+                        var clipboard = new ClipboardJS('.ip1');
+                        alertify.success('IP COPIED!');
+                });
+        }
+});

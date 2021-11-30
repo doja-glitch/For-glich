@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+                integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+                crossorigin="anonymous">
+        <script src="https://inwin1designs.com/firefly/jquery.firefly-0.7.min.js"></script>
+        <script src="https://mcapi.us/scripts/minecraft.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.3/build/css/alertify.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.3/build/alertify.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+</head>
+
+<body style="background-image: url('https://i.imgur.com/l3ns7ck.png')!important">
+        <div id="theWrapper" style="height:auto">
+                <div id="headerarea">
+                        <div class="logoarea" style="background-color:transparent">
+                                <center><img class="animated pulse infinite" src="https://i.imgur.com/5SQYz0K.png"
+                                                alt="Logo" style="width:400px;height:350px;margin-top:75px;"
+                                                id="theLogo"></img></center>
+                        </div>
+                        <div class="spacer" style="width:5%"></div>
+                        <div class="infoarea" style="width:25%;">
+                                <div class="user">
+                                        <p><i class="fas fa-user" style="margin-right:5px"></i><span id="lgi"
+                                                        style="display:inline-block"></span>
+                                                <span class="username_1"></span></p>
+                                </div>
+                                <div class="playercounter">
+                                        <p><i class="fas fa-globe-europe" style="margin-right:5px"></i>Players online:
+                                                <span class="players1"><i class="fas fa-spinner"></i></span><span
+                                                        style="margin-left:25px;"></span></p>
+                                </div>
+                                <div class="ip1" data-clipboard-text="play.orbsky.net">
+                                        <p><i class="fas fa-copy" style="margin-right:5px"></i>Server adress: <span
+                                                        class="serverip">play.orbsky.net</span>
+                                        </p>
+                                </div>
+                        </div>
+                </div>
+                <ul class="navbar_btns">
+                        <li><a href="/news"><img src="https://i.imgur.com/ys3FJVP.png" alt="home"><span>HOME</span></a>
+                        </li>
+                        <li><a href="/forum"><img src="https://i.imgur.com/9WfXOId.png"
+                                                alt="forums"><span>FORUMS</span></a></li>
+                        <li><a href="/store"><img src="https://i.imgur.com/gV7dlJc.png"
+                                                alt="store"><span>STORE</span></a></li>
+                        <li><a href="/vote"><img src="https://i.imgur.com/XTMQWnp.png" alt="vote"><span>VOTE</span></a>
+                        </li>
+                </ul>
+        </div>
+</body>
+
+</html>
+
+<script>
+        window.addEventListener('load', function showFireflies() {
+                $.firefly({
+                        color: '#388dff',
+                        minPixel: 1,
+                        maxPixel: 3,
+                        total: 65,
+                        on: '#theWrapper'
+                });
+        });
+</script>
