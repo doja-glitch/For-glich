@@ -1,0 +1,14 @@
+<div class="404" style="height:411px">
+        <center>
+                <h1
+                        style="text-align:center;margin-top:55px;font-size:44px;color:white;background-color:#064BA7;padding:33px;width:80%;border-radius:11px">
+                        404 ERROR | This page was not found!</h1>
+        </center>
+        <p style="text-align:center;margin-top:22px;">Unfornately the requested page could not be found, please try
+                again later or check your URL.</p>
+        <p style="text-align:center;margin-top:11px">If you believe this is an error, please contact website
+                administraion.</p>
+</div>
+<div class="puser" style="height:200px;background-color:transparent">
+
+</div>
