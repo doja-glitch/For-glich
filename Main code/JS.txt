@@ -1,0 +1,47 @@
+// Script regarding players, using MCAPI - https://mcapi.us/
+window.addEventListener('load', function theseFunc() {
+        var un = $('#enjin-bar span.element_username').text();
+        if (un == '') {
+                document.getElementById("lgi").innerHTML = "Not logged in...";
+                document.getElementById("dsb").style.display = 'none';
+                document.getElementById("lgout").style.display = 'none';
+                document.getElementById("loginn").style.display = 'inline-block';
+                document.getElementById("regis").style.display = 'inline-block';
+                runIt();
+        } else {
+                document.getElementById("lgi").innerHTML = "Logged in as ";
+                document.querySelector(".username_1").innerHTML = un;
+                document.querySelector(".username_panel").innerHTML = un;
+                document.getElementById("dsb").style.display = 'inline-block';
+                document.getElementById("lgout").style.display = 'inline-block';
+                document.getElementById("loginn").style.display = 'none';
+                document.getElementById("regis").style.display = 'none';
+                runIt();
+        }
+
+        function runIt() {
+                MinecraftAPI.getServerStatus('s.nerd.nu', {
+                        port: 25565
+                }, function (err, status) {
+                        if (err) {
+                                console.log('Error')
+                        }
+                        document.querySelector('.playerss').innerHTML = status.players.now;
+                        document.querySelector('.playerss').style.animation = 'none';
+                        document.querySelector('.playerss').style.borderBottom = 'solid 2px rgb(6, 75, 167)';
+                });
+                document.querySelector('.ip').addEventListener('click', function copyIP() {
+                        console.log('Copying the IP');
+                        var clipboard = new ClipboardJS('.ip');
+                        alertify.success('IP COPIED!');
+                });
+
+                document.getElementById('dashboard_btn').addEventListener('click', function showDashboard() {
+                        document.querySelector('.bck').style.display = 'block';
+                });
+                document.getElementById('exit').addEventListener('click', function exitDashboard() {
+                        location.reload();
+                });
+                userProfile();
+        }
+});

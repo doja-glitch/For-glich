@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+                integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+                crossorigin="anonymous">
+        <script src="https://inwin1designs.com/firefly/jquery.firefly-0.7.min.js"></script>
+        <script src="https://mcapi.us/scripts/minecraft.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.3/build/css/alertify.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.11.3/build/alertify.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+</head>
+
+<body>
+        <div class="loader">
+                <div class="loading"></div>
+        </div>
+        <ul class="topbar">
+                <li id="dsb" style="display:none"><a id="dashboard_btn" style="cursor:pointer;"><i class="fas fa-user"
+                                        style="margin-right:5px;cursor: pointer;"></i>Dashboard</a>
+                </li>
+                <li id="lgout" style="display:none"><a href="/logout"
+                                style="background-color:rgba(255, 0, 0, 0.651);border:none!important"><i
+                                        class="fas fa-sign-out-alt" style="margin-right:5px"></i>Logout</a></li>
+                <li id="loginn" style="display:none"><a id="dashboard_btn" style="cursor:pointer;" href="/login"><i
+                                        class="fas fa-user" style="margin-right:5px;cursor: pointer;"></i>Login</a>
+                </li>
+                <li id="regis" style="display:none"><a href="/login/do/register"
+                                style="background-color:rgba(62, 133, 74,0.651);border:none!important"><i
+                                        class="fas fa-sign-out-alt" style="margin-right:5px"></i>Register</a></li>
+                <li class="topbar_spacing"></li>
+                <li id="spp">
+                        <p>Social platforms:</p>
+                </li>
+                <!-- ADD DIRECT LINK TO YOUR DISCORD AND TWITTER IN BETWEEN the href".................LINK HERE...................."-->
+                <li><a href=""><i class="fab fa-discord" style="margin-right:5px"></i>Discord</a></li>
+                <li><a href=""><i class="fab fa-twitter" style="margin-right:5px"></i>Twitter</a></li>
+        </ul>
+
+        <div id="headerarea">
+                <div class="logoarea" style="background-color:transparent">
+                        <center><img class="animated pulse infinite" src="https://i.imgur.com/5SQYz0K.png" alt="Logo"
+                                        style="width:400px;height:350px;margin-top:75px;" id="theLogo"></img></center>
+                </div>
+                <div class="spacer" style="width:5%"></div>
+                <div class="infoarea" style="width:25%;">
+                        <div class="user">
+                                <p><i class="fas fa-user" style="margin-right:5px"></i><span id="lgi"
+                                                style="display:inline-block"></span>
+                                        <span class="username_1"></span></p>
+                        </div>
+                        <div class="playercounter">
+                                <p><i class="fas fa-globe-europe" style="margin-right:5px"></i>Players online: <span
+                                                class="playerss"><i class="fas fa-spinner"></i></span><span
+                                                style="margin-left:25px;"></span></p>
+                        </div>
+                        <div class="ip" data-clipboard-text="play.orbsky.net">
+                                <p><i class="fas fa-copy" style="margin-right:5px"></i>Server adress: <span
+                                                class="serverip">play.orbsky.net</span>
+                                </p>
+                        </div>
+                </div>
+        </div>
+
+        <ul class="navbar">
+                <li><a class="hvr-grow" href="/news"><i class="fas fa-home" style="margin-right:5px"></i>HOME</a></li>
+                <li><a class="hvr-grow" href="/forum"><i class="fas fa-folder-open"
+                                        style="margin-right:5px"></i>FORUMS</a></li>
+                <li><a class="hvr-grow" href="/shop"><i class="fas fa-shopping-basket"
+                                        style="margin-right:5px"></i>STORE</a></li>
+                <li><a class="hvr-grow" href="/staff"><i class="fas fa-users" style="margin-right:5px"></i>STAFF</a>
+                </li>
+                <li><a class="hvr-grow" href="/vote"><i class="fas fa-star" style="margin-right:5px"></i>VOTE</a></li>
+        </ul>
+        <center>
+                <div class="bck" style="display:none;justify-content: center;">
+                        <div class="panel">
+                                <div id="exit"><i class="fas fa-times"></i></div>
+                                <h2 style="font-size:33px">User panel</h2>
+                                </p>
+                                <ul class="panel_btns">
+                                        <center>
+                                        </center>
+                                        <p style="margin-top:22px;margin-bottom:22px">Hello there <span
+                                                        class="username_panel">...</span>, you can go to these
+                                                different
+                                                areas:
+                                                <h3>Profile</h3>
+                                                <li><a href="/dashboard"><i class="fas fa-tachometer-alt"
+                                                                        style="margin-right:5px;"></i>Dashboard</a></li>
+                                                <li><a href="/profile"><i class="fas fa-user-circle"
+                                                                        style="margin-right:5px;"></i>Profile page</a>
+                                                </li>
+                                                <h3>Applications</h3>
+                                                <li><a href="/newapp"><i class="fas fa-folder-plus"
+                                                                        style="margin-right:5px;"></i>New
+                                                                application</a></li>
+                                                <li><a href="/dashboard/applications"><i class="fas fa-folder-open"
+                                                                        style="margin-right:5px;"></i>View your
+                                                                applications</a></li>
+                                                <h3>Settings</h3>
+                                                <li><a href="/dashboard/account"><i class="fas fa-user-cog"
+                                                                        style="margin-right:5px;"></i>User settings</a>
+                                                </li>
+                                </ul>
+                        </div>
+                </div>
+        </center>
+
+        </div>
+        <div class="footer1">
+                <div class="row1">
+                        <center><img class="animated pulse infinite" src="https://i.imgur.com/5SQYz0K.png" alt="Logo"
+                                        style="width:300px;height:300px;margin-top:22px;"></img></center>
+                </div>
+                <div class="row2">
+                        <center>
+                                <h2 id="title" style="margin-top:12px">About us</h2>
+                        </center>
+                        <!-- ADD CUSTOM ABOUT INFORMATION HERE -->
+                        <p style="height: auto;width:100%" id="about">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Phasellus porttitor tortor vel mauris blandit sollicitudin. Etiam pulvinar nibh
+                                mauris, quis rutrum enim rhoncus et. In hac habitasse platea dictumst. Fusce ante neque,
+                                suscipit eget lobortis sit amet, dictum eget erat. Suspendisse vehicula aliquet lacus,
+                                eget eleifend lacus pharetra iaculis. Ut id dignissim augue, id ultrices justo. In ac
+                                libero nisl.
+                                <br>
+                                <br>
+                                Phasellus in viverra neque, sit amet sollicitudin velit. Nullam eu hendrerit felis.
+                                Aenean eu risus ullamcorper, scelerisque ipsum eget, tempor arcu. Nunc vel lorem quis
+                                enim pulvinar dapibus.
+
+                        </p>
+                </div>
+                <div class="row3">
+                        <center>
+                                <h2 id="title">Navigation</h2>
+                                <a href="/news"><i class="fas fa-home" style="margin-right:5px"></i>HOME</a>
+                                <a href="/forums"><i class="fas fa-folder-open" style="margin-right:5px"></i>FORUMS</a>
+                                <a href="/store"><i class="fas fa-shopping-basket"
+                                                style="margin-right:5px"></i>STORE</a>
+                                <a href="/staff"><i class="fas fa-users" style="margin-right:5px"></i>STAFF</a>
+                                <a href="/vote"><i class="fas fa-star" style="margin-right:5px"></i>VOTE</a>
+                        </center>
+                </div>
+        </div>
+        <p id="footer_creds"
+                style="position:absolute;bottom:0;margin-left:auto;margin-right:auto;left:0;right:0;text-align:center;z-index:100;color:#197bfa">
+                Website
+                designed by <a href="https://inwin1designs.com/" target="_blank">Inwin1</a> // Produly hosted by <a
+                        href="https://www.enjin.com/" target="_blank">Enjin</a></p>
+</body>
+
+</html>
+
+<script>
+        window.addEventListener('load', function showFireflies() {
+                $.firefly({
+                        color: '#388dff',
+                        minPixel: 2,
+                        maxPixel: 4,
+                        total: 95,
+                        on: '#headerarea'
+                });
+        });
+</script>
