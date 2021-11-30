@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap');
+
+/* ENJIN RELATED CSS */
+html,
+body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #2d2d2d;
+        background-image: url("https://i.imgur.com/l3ns7ck.png");
+        background-size: cover;
+}
+
+::-webkit-scrollbar {
+        width: 6px;
+}
+
+::-webkit-scrollbar-track {
+        background: #2d2d2d;
+}
+
+::-webkit-scrollbar-thumb {
+        background: rgb(6, 75, 167);
+}
+
+.alertify-notifier .ajs-message.ajs-success {
+        background-color: rgb(6, 75, 167) !important;
+        color: rgba(255, 255, 255, 0.671);
+        font-family: 'Quicksand', sans-serif;
+}
+
+#enjin-bar {
+        display: none;
+}
+
+#page {
+        width: 100% !important;
+        max-width: none !important;
+        background-image: url('https://i.imgur.com/l3ns7ck.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: bottom;
+        background-size: cover;
+}
+
+.m_html {
+        padding: 0px !important;
+}
+
+#section-header .container_spacer {
+        display: none !important;
+}
+
+#site-body>div:nth-child(1) {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: bottom;
+}
+
+#site-body>div:nth-child(2) {
+        display: none;
+}
+
+#site-body>div:nth-child(3) {
+        display: none;
+}
+
+.widthfull {
+        width: 100%;
+}
+
+#enjin-tray {
+        display: none;
+}
+
+#enjin-tray-messaging {
+        display: none !important;
+}
+
+.element_microtip.clickable {
+        display: none;
+}
+
+#enjin-tray-chatchannels {
+        display: none !important;
+}
+
+p {
+        font-size: 16px !important;
+        font-family: 'Quicksand', sans-serif;
+}
+
+a {
+        color: #1873ed;
+        font-family: 'Quicksand', sans-serif;
+        transition-duration: 0.5s;
+        text-decoration: none;
+}
+
+a:hover {
+        color: white;
+        transition-duration: 0.5s;
+        text-decoration: none;
+}
+
+::selection {
+        background: rgba(6, 75, 167, 0.4);
+}
+
+::-moz-selection {
+        background: rgba(6, 75, 167, 0.4);
+}
+
+/* HEADERAREA */
+#headerarea {
+        display: flex;
+        width: 100%;
+        height: 475px;
+        margin: 0;
+        padding: 0;
+        background-image: url('https://i.imgur.com/l3ns7ck.png');
+        background-attachment: fixed;
+        background-position: bottom;
+        justify-content: center;
+        font-family: 'Quicksand', sans-serif;
+}
+
+#headerarea>div {
+        display: block;
+        width: 30%;
+        margin-left: 5px;
+        margin-right: 5px;
+}
+
+.user {
+        display: block;
+        width: 300px;
+        height: 60px;
+        background-color: rgba(0, 0, 0, 0.432);
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-top: 155px;
+        transition-duration: 1s;
+}
+
+.user:hover {
+        background-color: rgb(6, 75, 167);
+        transition-duration: 1s;
+}
+
+.user p {
+        display: block;
+        padding-left: 10px;
+        padding-top: 20px;
+        text-align: left;
+        color: rgba(255, 255, 255, 0.671);
+}
+
+.username_1 {
+        border-bottom: solid 2px rgb(6, 75, 167);
+}
+
+.playercounter {
+        display: block;
+        width: 350px;
+        height: 60px;
+        background-color: rgba(0, 0, 0, 0.432);
+        margin-top: 15px;
+        margin-bottom: 15px;
+        cursor: pointer;
+        transition-duration: 1s;
+}
+
+.playercounter:hover {
+        background-color: rgb(6, 75, 167);
+        transition-duration: 1s;
+}
+
+.playercounter:hover .players1 {
+        color: rgba(255, 255, 255, 0.671);
+        transition-duration: 1s;
+}
+
+.playercounter p {
+        display: block;
+        padding-left: 10px;
+        padding-top: 20px;
+        text-align: left;
+        color: rgba(255, 255, 255, 0.671);
+}
+
+.players1 {
+        position: absolute;
+        width: auto;
+        height: auto;
+        margin-left: 5px;
+        -webkit-animation: spin 2s linear infinite;
+        -moz-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+        color: rgba(255, 255, 255, 0.671);
+        transition-duration: 1s;
+}
+
+@-moz-keyframes spin {
+        100% {
+                -moz-transform: rotate(360deg);
+        }
+}
+
+@-webkit-keyframes spin {
+        100% {
+                -webkit-transform: rotate(360deg);
+        }
+}
+
+@keyframes spin {
+        100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+        }
+}
+
+
+.ip1 {
+        display: block;
+        width: 400px;
+        height: 60px;
+        background-color: rgba(0, 0, 0, 0.432);
+        margin-top: 15px;
+        margin-bottom: 15px;
+        cursor: pointer;
+        transition-duration: 1s;
+}
+
+.ip1:hover {
+        background-color: rgb(6, 75, 167);
+        transition-duration: 1s;
+}
+
+.ip1 p {
+        display: block;
+        padding-left: 10px;
+        padding-top: 20px;
+        text-align: left;
+        color: rgba(255, 255, 255, 0.671);
+}
+
+.serverip {
+        border-bottom: solid 2px rgb(6, 75, 167);
+}
+
+.navbar_btns {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        background-color: rgba(45, 45, 45, 0.5);
+        text-align: center;
+}
+
+.navbar_btns li {
+        display: inline-block;
+        list-style-type: none !important;
+        width: auto;
+        padding: 25px;
+        height: auto;
+        margin-top: 50px;
+        margin-left: 55px;
+        margin-right: 55px;
+        margin-bottom: 50px;
+        overflow: hidden;
+        transform: scale(1.0);
+        transition-duration: 0.5s;
+        text-align: center;
+}
+
+.navbar_btns li img {
+        width: 200px;
+        height: 200px;
+}
+
+.navbar_btns li:hover span {
+        color: white;
+        transition-duration: 0.5s;
+}
+
+.navbar_btns li:hover {
+        transform: scale(1.1);
+        transition-duration: 0.5s;
+}
+
+.navbar_btns a {
+        text-decoration: none;
+}
+
+.navbar_btns li span {
+        display: block;
+        padding-top: 30px;
+        font-size: 33px;
+        font-family: 'Rubik Mono One', sans-serif;
+        border-radius: 11px;
+        text-decoration: none;
+        margin-top: 25px;
+        transition-duration: 0.5s;
+}
+
+
+
+/* UPDATE 1.15 */
+#page {
+    width: 100% !important;
+    max-width: none !important;
+    background-image: url(https://i.imgur.com/l3ns7ck.png);
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    background-position: bottom !important;
+    height: 100% !important;
+}
+
+#headerarea {
+	background-image: none !important
+}
+
+body {
+	background-image: none !important
+}
